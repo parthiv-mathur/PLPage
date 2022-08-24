@@ -1,0 +1,23 @@
+STEPS:
+
+1. get the table printed and current prediction score printed in the server. Use flask.
+--> need to figure out how to use flask and print into the created host.
+    --> can we only return? No. have to render through HTML. best way.
+--> look into selenium - somehow flask isn't able to auto open the browser when program runs
+    --> still an issue, just configured a launch.json and figured something out. But don't think I actually solved the root issue
+--> figured out how to render html, make html and figure how to configure with data flask is getting
+    --> Jinja?? is what I am using?? who knows???
+--> can maybe just use style component for HTML, but can use CSS as well if you want.
+
+2. work on creating a homepage, with the current table as well as current prediction score.
+    --> essentially there, need to format it nicer
+    --> add PLAYED, WINS, DRAWS, LOSSES, GOALS FOR, GOALS AGAINST, NEXT FIXTURE, HOME or AWAY
+
+3. implement graph feature, score over time
+
+4. implement users and database to store user information
+    --> store user's favorite team, ask them, and then keep that in mind to check some table value. 
+
+5. make the entire thing look very nice
+
+6. create official website????
