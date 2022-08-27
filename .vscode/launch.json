@@ -5,25 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Flask",
+            "name": "Flask",
             "type": "python",
             "request": "launch",
             "module": "flask",
             "env": {
                 "FLASK_APP": "website.py",
-                "FLASK_ENV": "development"
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0"
             },
-            "serverReadyAction": {
-                "pattern": "listening on port ([0-9]+)",
-                "uriFormat": "http://localhost:%s",
-                "action": "openExternally"
-              },
             "args": [
                 "run",
-                "--no-debugger"
+                "--no-debugger",
+                "--no-reload"
             ],
             "jinja": true,
-            "justMyCode": true
+            "serverReadyAction": {
+                "pattern": ".*(https?:\\/\\/\\S+:[0-9]+\\/?).*",
+                "uriFormat": "%s",
+                "action": "openExternally"
+              }
         }
     ]
 }

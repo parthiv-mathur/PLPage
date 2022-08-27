@@ -24,6 +24,7 @@ def get_table() -> list:
     returned = []
     for i in range(len(true_table) - 1):
         returned.append(true_table[i+1])
+        
     print(returned)
     return returned
 
@@ -55,7 +56,7 @@ def get_current_prediction_value(table, predictions) -> int:
 
 if __name__ == "__main__":
     true_table = get_table()
-    #pprint(true_table)
+    pprint(true_table)
     
     hard_coded_predictions = ['Manchester City', 'Liverpool', 'Chelsea', 'Arsenal', 'Tottenham', "Manchester United",
     "West Ham", "Newcastle United", "Wolves", "Crystal Palace", "Leicester", "Aston Villa", "Brighton", "Fulham",

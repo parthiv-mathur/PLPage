@@ -17,6 +17,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    #print(get_table())
     return render_template("index.html", options=get_table())
 
 @app.route('/')
@@ -146,7 +147,7 @@ def table():
 #def open_browser():
     #webbrowser.open_new_tab("http://127.0.0.1:4999/")
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
     #port = 5000 + random.randint(0, 999)
     #url = "http://127.0.0.1:{0}".format(port)
 
@@ -155,7 +156,7 @@ def table():
     #app.run(port=port, debug=False)
     #subprocess.Popen(['python', '-m', 'SimpleHTTPServer', '5000'])
 
-    #app.run(host='127.0.0.1', port=5000)
+    app.run(use_reloader = False)
     #open_browser()
     #app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
 

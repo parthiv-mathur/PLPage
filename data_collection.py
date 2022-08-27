@@ -17,12 +17,8 @@ def get_table() -> list:
 
 
     length = len(tab)
-    for i in range(1):
-        for value in tab[i].text:
-            print(value)
-            
+    for i in range(length):            
         table.append(tab[i].text.strip())
-
 
 
     true_table = convert_table(table)
