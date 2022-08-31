@@ -42,9 +42,6 @@ def convert_table(predictions) -> list:
 
 
 
-
-
-
 #### WE NOW NEED TO LOGIC OUT THE TABLE DIFFERENCE
 
 def get_current_prediction_value(table, predictions) -> int:
@@ -113,8 +110,10 @@ def test_creating_tables():
     meta_list.append(loss_table)
     meta_list.append(gd_table)
     meta_list.append(points_table)
-    print(meta_list)
+    #print(meta_list)
     return meta_list
+
+
 
 
 if __name__ == "__main__":
@@ -123,7 +122,7 @@ if __name__ == "__main__":
     
     hard_coded_predictions = ['Manchester City', 'Liverpool', 'Chelsea', 'Arsenal', 'Tottenham', "Manchester United",
     "West Ham", "Newcastle United", "Wolves", "Crystal Palace", "Leicester", "Aston Villa", "Brighton", "Fulham",
-    "Everton", "Brentford", "Leeds", "Bournemouth", "Nottingham Forest", "Southampton"]
+    "Everton", "Brentford", "Leeds", "Southampton", "Nottingham Forest", "Bournemouth"]
 
     dummy_test = true_table
 

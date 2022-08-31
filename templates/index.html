@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Premier League Information</h1>
-    <table>
+    <table style="float: left">
         <tr>
             <th>Pos</th>
             <th>Team</th>
@@ -26,6 +26,20 @@
                     {% endfor %}
             </tr>
         {% endfor %}
+    </table>
+
+    <table style="float: right">
+        <tr>
+            <th>Pos</th>
+            <th>Team</th>
+            {%for i in range(20)%}
+                <tr>
+                    {% for j in range(2) %}
+                        <th>{{predictions[j][i]}}</th>
+                        {% endfor %}
+                </tr>
+            {% endfor %}
+        </tr>
     </table>
 </body>
 </html>
