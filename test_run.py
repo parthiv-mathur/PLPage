@@ -41,9 +41,6 @@ def convert_table(predictions) -> list:
 
 
 
-
-
-
 #### WE NOW NEED TO LOGIC OUT THE TABLE DIFFERENCE
 
 def get_current_prediction_value(table, predictions) -> int:

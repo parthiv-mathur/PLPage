@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Premier League Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-    <h1>Premier League Standings</h1>
-    <div>{% for item in options %}
-        <li> {{item}} </li>
-        {% endfor %}</div>
+    <h1>Premier League Information</h1>
+    <table>
+        <tr>
+            <th>Pos</th>
+            <th>Team</th>
+            <th>PL</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>GD</th>
+            <th>Points</th>
+        </tr>
+
+        {%for i in range(20)%}
+            <tr>
+                {% for j in range(8) %}
+                    <th>{{meta_list[j][i]}}</th>
+                    {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>

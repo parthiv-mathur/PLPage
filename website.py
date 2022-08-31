@@ -3,14 +3,10 @@ import lxml
 import requests
 from bs4 import BeautifulSoup
 import re
-import time
-import webbrowser
-import os
 from threading import Timer
-import random, threading
-import subprocess
 
 from data_collection import get_table
+from data_collection import test_creating_tables
 
 
 app = Flask(__name__)
@@ -18,7 +14,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     #print(get_table())
-    return render_template("index.html", options=get_table())
+    meta_list = test_creating_tables()
+    return render_template("index.html", meta_list=meta_list)
 
 @app.route('/')
 def prem_table():

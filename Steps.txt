@@ -1,5 +1,37 @@
 STEPS:
 
+1. using beautiful soup, create tables for premier league teams, W, L, D, GF, GA, and Points. pass into template and render.
+2. make table look prettier. Figure out how to add css components.
+
+3. Make a rough sketch of page. where will the table be? where will the predicted table be? where will the score be? what else should
+be added?
+    --> keep real table, predicted table, color code prediction values, print overall prediction, keep relevant info for primary team. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+META STEPS
+
 1. get the table printed and current prediction score printed in the server. Use flask.
 --> need to figure out how to use flask and print into the created host.
     --> can we only return? No. have to render through HTML. best way.
@@ -19,6 +51,8 @@ STEPS:
     --> store user's favorite team, ask them, and then keep that in mind to check some table value. 
 
 5. make the entire thing look very nice
+
+6. use pandas to scrape fbref data, output it nicely. maybe add dynamic links or whatever later on. this would be a new tab.
 
 6. create official website????
 
